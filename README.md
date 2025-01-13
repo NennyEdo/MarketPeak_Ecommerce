@@ -13,3 +13,18 @@
     
      1.2. Obtain and prepare e-commerce website Template [Sample Template](https://www.tooplate.com/download/2130_waso_strategy)
 
+     -Extract downloded template to "**MarketPeak_Ecommerce**"
+
+    1.3. Stage and commit template to Git.
+       - Add website to the git repository.
+         ```bash
+            git add .
+       - set git global configuration with username and email.
+         ```bash
+            git config --global user.name "NennyEdo"
+            git config --global user.email "myemail@example.com"
+       - commit changes with descriptive message.
+         ```bash
+            git commit -m "Initial commit with basic e-commerce site structure"
+         
+            
