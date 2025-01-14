@@ -27,4 +27,39 @@
          ```bash
             git commit -m "Initial commit with basic e-commerce site structure"
          
+      1.4. Create and push code to remote Repository
+
+       - Remote reository name and actual git username "**MarketPeak_Ecommerce**"
+          ```bash
+          git remote add origin https://github.com/your-git-username/MarketPeak_Ecommerce.git
+          ```
+       - upload local Repository content to Github
+         ```bash
+         git push -u origin main
+         ```
+   2. AWS Deployment
+      
+      2.1. Set up an AWS EC2 instance
+      -    Log in to AWS Management console
+      -    Launch an EC2 Instance with Amazon linux
+      -    Connect to instance with SSH
+     
+      2.2. Clone Repository on Linux server with SSH authenticaion
+      
+      -    Go to the Github repository
+      -    On your EC2 instance, generate SSH-Keypair using SSH-Keygen
+      -    Display and copy key
+     
+        ```bash
+        cat /home/ubuntu/.ssh/id_rsa.pub
+        ```
+      -   Add SSH public key GitHub account
+      -   Clone SSH to Repository
+     
+        ```bash
+        git clone git@github.com:yourusername/MarketPeak_Ecommerce.git
+         ```
+                  
+          
+         
             
