@@ -59,6 +59,56 @@
         ```bash
         git clone git@github.com:yourusername/MarketPeak_Ecommerce.git
          ```
+      2.3. Install Web server on EC2
+
+      - Install Apache web server on linux to host "**MarketPeak_Ecommerce**"
+
+        ```bash
+        sudo apt update -y
+        sudo apt install httpd -y
+        sudo systemctl start apache2
+        sudo systemctl enable apache2
+        ```
+      - This will update linux server, install apache, strts and boot webserver.
+
+      2.4. Configure Httpd for website.
+      - This directory /var/www/html/ is created by default once Apache is installed on linux server to host web contents like HTML and CSS files for those visiting this site.
+
+         ```bash
+         sudo rm -rf /var/www/html/*
+         ```
+      - This will clear default httpd web directory
+
+         ```bash
+         sudo cp -r ~/MarketPeak_Ecommerce/* /var/www/html/
+         ```
+      - Once the default web dierectory is cleared, copy MarketPeak e-commerce files to /var/www/html/
+      - Apply changes by reloading httpd
+     
+        ```bash
+         sudo systemctl reload httpd
+        ```
+      2.5. Access website from browser using IP address
+      
+      3.0. Continous integration and deployment workflow
+      
+      **Step1**: Developing new features and fixes
+
+      - Creatig new branch "**development**"
+        
+        ```bash
+        git branch development
+        ```
+      **Step2**: Version ontrol with Git
+      
+      
+        
+      
+      
+      
+      
+
+         
                   
           
          
