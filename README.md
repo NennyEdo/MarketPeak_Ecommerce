@@ -94,12 +94,52 @@
       
       **Step1**: Developing new features and fixes
 
-      - Creatig new branch "**development**"
+      - Creating new branch "**development**"
         
         ```bash
         git branch development
         ```
       **Step2**: Version ontrol with Git
+
+      - Adding changes to Git
+      ```bash
+         git add .
+      ```
+      - Commit changes to Git
+      ```bash
+         git commit -m "Add new features or fix bugs"
+      ```
+      - Push changes to Github
+      ```bash
+         git push origin development
+      ```
+      **Step3**: Pull and merge request to main branch
+      
+      ```bash
+         git checkout main
+         git merge development
+      ```
+      - Push merge changes to Github
+        
+      ```bash
+      git push origin main
+      ```
+
+      **Step4**: Deploying update to server
+      - Pull latest changes.
+      ```bash
+      git pull origin main
+      ```
+      - Restart web server
+      ```bash
+      sudo systemctl reload httpd
+      ```
+      **Step5**: Testing New changes.
+         
+
+
+
+      
       
       
         
